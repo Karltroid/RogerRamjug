@@ -33,10 +33,40 @@ header
 	position: relative;
 }
 
+footer
+{
+	box-shadow: var(--centeredBoxShadow);
+	text-align: center;
+	color: var(--siteGray);
+	font-weight: lighter;
+	padding: 0 0 var(--desktopVerticalSpacing) 0;
+	background: var(--sitePurple);
+}
+
+footer nav a
+{
+	display: inline-block;
+	padding: var(--desktopVerticalSpacing) var(--desktopPadding);
+}
+
+footer nav a:hover
+{
+	text-decoration: underline;
+	transform: scale(1.05);
+	transition: .25s;
+}
+
+h1
+{
+	font-family: product-sans-bold;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
 #navbar img#header-logo
 {
 	height: 100%;
-	margin-left: var(--desktopPadding);
+	margin-left: var(--desktopSideMargin);
 }
 
 #navbar
@@ -57,7 +87,7 @@ header
 	height: 100%;
 	line-height: var(--desktopHeaderHeight);
 	white-space: nowrap;
-	margin-right: var(--desktopPadding);
+	margin-right: var(--desktopSideMargin);
 }
 
 #navbar a
@@ -67,6 +97,7 @@ header
 	font-size: 1.2em;
 	height: 100%;
 	padding: 0 calc(var(--desktopPadding) * 1.5);
+	text-transform: uppercase;
 }
 
 #navbar a:hover
@@ -80,6 +111,11 @@ header
 {
 	position: fixed;
 	top: 0;
+}
+
+.sticky-header-spacing
+{
+	padding-top: calc(var(--desktopHeaderHeight) + var(--desktopPadding));
 }
 
 .desktop
@@ -96,4 +132,15 @@ header
 	visibility: hidden;
 	pointer-events: none;
 	position: fixed;
+}
+
+#content
+{
+	margin: var(--desktopVerticalSpacing) var(--desktopSideMargin);
+}
+
+.social
+{
+	height: 17px;
+	margin-bottom: -3px;
 }
