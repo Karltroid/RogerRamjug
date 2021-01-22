@@ -1,0 +1,77 @@
+/* Hide scrollbar for mobile */
+::-webkit-scrollbar { display: none; }
+
+header
+{
+	z-index: -1;
+	width: 100%;
+	height: 30vh;
+	background: url('../images/stockphotos/3.jpg') no-repeat fixed;
+	background-size: contain;
+	background-position: top center;
+	position: relative;
+}
+
+#navbar
+{
+	z-index: 1;
+	padding:  var(--mobilePadding) 0;
+	font-family: product-sans-bold;
+	height: var(--mobileHeaderHeight);
+	width: 100%;
+	background-color: var(--siteDarkBlue);
+	box-shadow: var(--perspectiveBoxShadow);
+}
+
+#navbar img#header-logo
+{
+	height: 100%;
+	margin-left: var(--mobilePadding);
+}
+
+#navbar nav
+{
+	float: right;
+	display: inline-block;
+	height: 100%;
+	line-height: var(--mobileHeaderHeight);
+	white-space: nowrap;
+	margin-right: var(--mobilePadding);
+}
+
+#navbar button
+{
+	float: right;
+	display: inline-block;
+	height: 100%;
+	line-height: var(--mobileHeaderHeight);
+	white-space: nowrap;
+	margin-right: var(--mobilePadding);
+}
+
+#navbar button:hover img
+{
+	transform: scale(1.05);
+	transition: .25s;
+}
+
+#navbar button img
+{
+	height: 100%;
+}
+
+.desktop
+{
+	display: none;
+	visibility: hidden;
+	pointer-events: none;
+	position: fixed;
+}
+
+.mobile
+{
+	display: initial;
+	visibility: visible;
+	pointer-events: auto;
+	position: static;
+}

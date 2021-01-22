@@ -1,0 +1,37 @@
+/*********
+* FONTS *
+*********/
+@font-face 
+{
+	font-family: product-sans-bold;
+	src: url('../fonts/productsans/productsansbold.ttf');
+}
+@font-face 
+{
+	font-family: product-sans;
+	src: url('../fonts/productsans/productsansregular.ttf');
+}
+
+/*************
+* VARIABLES *
+*************/
+:root
+{
+	/* common colors */
+	--siteDarkPurple: #25274D;
+	--sitePurple: #464866;
+	--siteGray: #AAABB8;
+	--siteBlue: #2E9CCA;
+	--siteDarkBlue: #29648A;
+
+	/* paddings & margins */
+	--desktopHeaderHeight: 80px;
+	--mobileHeaderHeight: 60px;
+	--desktopPadding: 20px;
+	--mobilePadding: 15px;
+	--centerBlock: 0 auto;
+
+	/* box shadows */
+	--perspectiveBoxShadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	--centeredBoxShadow: 0 0px 10px rgba(0, 0, 0, 0.25);
+}
