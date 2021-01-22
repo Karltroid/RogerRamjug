@@ -45,13 +45,14 @@ footer
 
 footer
 {
-	padding: var(--desktopVerticalSpacing) 0;
+	padding: var(--desktopVerticalSpacing) var(--desktopSideMargin);
 }
 
 footer nav a
 {
 	display: inline-block;
-	padding: 0 var(--desktopPadding) var(--desktopVerticalSpacing);
+	padding: 0 var(--desktopPadding);
+	margin-bottom: var(--desktopVerticalSpacing);
 }
 
 footer nav a:hover

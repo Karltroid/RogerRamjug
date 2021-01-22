@@ -14,12 +14,13 @@ header
 
 footer
 {
-	padding: var(--mobileVerticalSpacing) 0;
+	padding: var(--mobileVerticalSpacing)  var(--mobileSideMargin);
 }
 
 footer nav a
 {
-	padding: 0 var(--mobilePadding) var(--mobileVerticalSpacing);
+	padding: 0 var(--mobilePadding);
+	margin-bottom: var(--mobileVerticalSpacing);
 }
 
 #navbar
