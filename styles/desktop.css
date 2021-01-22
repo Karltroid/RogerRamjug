@@ -43,7 +43,7 @@ footer
 	background: var(--sitePurple);
 }
 
-footer nav
+footer
 {
 	padding: var(--desktopVerticalSpacing) 0;
 }
@@ -51,7 +51,7 @@ footer nav
 footer nav a
 {
 	display: inline-block;
-	padding: 0 var(--desktopPadding);
+	padding: 0 var(--desktopPadding) var(--desktopVerticalSpacing);
 }
 
 footer nav a:hover

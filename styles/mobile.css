@@ -17,19 +17,9 @@ footer
 	padding: var(--mobileVerticalSpacing) 0;
 }
 
-footer nav
-{
-	padding: 0;
-}
-
 footer nav a
 {
 	padding: 0 var(--mobilePadding) var(--mobileVerticalSpacing);
-}
-
-footer nav a:hover
-{
-	text-decoration: underline;
 }
 
 #navbar
