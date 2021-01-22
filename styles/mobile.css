@@ -14,12 +14,17 @@ header
 
 footer
 {
-	padding: 0 0 var(--mobileVerticalSpacing) 0
+	padding: var(--mobileVerticalSpacing) 0;
+}
+
+footer nav
+{
+	padding: 0;
 }
 
 footer nav a
 {
-	padding: var(--mobileVerticalSpacing) var(--mobilePadding);
+	padding: 0 var(--mobilePadding) var(--mobileVerticalSpacing);
 }
 
 footer nav a:hover
