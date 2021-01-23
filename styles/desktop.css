@@ -15,6 +15,11 @@
 	outline: none;
 }
 
+html, body
+{
+	min-height: 100%;
+}
+
 body
 {
 	font-family: product-sans;
@@ -26,11 +31,10 @@ header
 {
 	z-index: -1;
 	width: 100%;
-	height: 45vh;
-	background: url('../images/stockphotos/4.jpg') no-repeat fixed;
-	background-size: cover;
-	background-position: bottom center;
-	position: relative;
+	height: calc((var(--desktopHeaderHeight) + var(--desktopPadding)) * 4);
+	background: url('../images/stockphotos/8.jpg') no-repeat fixed;
+	background-size: 100vw auto;
+	background-position: top center;
 }
 
 footer

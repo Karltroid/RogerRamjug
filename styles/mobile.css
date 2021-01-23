@@ -3,13 +3,9 @@
 
 header
 {
-	z-index: -1;
-	width: 100%;
-	height: 30vh;
+	height: calc((var(--mobileHeaderHeight) + var(--mobilePadding)) * 2.8);
 	background: url('../images/stockphotos/3.jpg') no-repeat fixed;
-	background-size: contain;
-	background-position: top center;
-	position: relative;
+	background-size: 100vw auto;
 }
 
 footer
