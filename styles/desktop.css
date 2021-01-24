@@ -97,7 +97,7 @@ h1
 	height: 100%;
 	line-height: var(--desktopHeaderHeight);
 	white-space: nowrap;
-	margin-right: var(--desktopSideMargin);
+	margin-right: calc(var(--desktopSideMargin) - var(--desktopPadding));
 }
 
 #navbar a
@@ -106,7 +106,7 @@ h1
 	display: inline-block;
 	font-size: 1.2em;
 	height: 100%;
-	padding: 0 calc(var(--desktopPadding) * 1.5);
+	padding: 0 var(--desktopPadding);
 	text-transform: uppercase;
 }
 
