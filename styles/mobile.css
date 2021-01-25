@@ -119,4 +119,11 @@ footer nav a
 {
 	height: calc(100vw - (var(--mobilePadding)*2));
 	margin-bottom: var(--mobileVerticalSpacing);
+	background-size: 100vw auto;
+}
+
+.section-break::before
+{
+	background-size: auto 100vh;
+	background-position: center;
 }
