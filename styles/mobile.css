@@ -83,3 +83,40 @@ footer nav a
 {
 	padding-top: calc(var(--mobileHeaderHeight) + (var(--mobilePadding)*2));
 }
+
+.section
+{
+	padding: var(--mobilePadding);
+	height: calc(var(--mobileVerticalSpacing) * 10);
+	margin-bottom: var(--mobileVerticalSpacing);
+}
+
+.section-image
+{
+	display: block;
+	width: 100%;
+	height: calc(var(--mobileHeaderHeight) * 3);
+}
+
+.section-text
+{
+	display: block;
+	padding: var(--mobilePadding);
+	box-shadow: var(--mobileBoxShadow);
+}
+
+.section-text h1
+{
+	font-size: 2.5em;
+}
+
+.section-text p
+{
+	font-size: 1.2em;
+}
+
+.section-break
+{
+	height: calc(100vw - (var(--mobilePadding)*2));
+	margin-bottom: var(--mobileVerticalSpacing);
+}

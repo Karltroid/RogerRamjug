@@ -69,8 +69,14 @@ footer nav a:hover
 h1
 {
 	font-family: product-sans-bold;
-	font-weight: normal;
 	text-transform: uppercase;
+	margin-bottom: var(--desktopPadding);
+}
+
+p
+{
+	margin-bottom: var(--desktopPadding);
+	text-indent: var(--desktopPadding);
 }
 
 #navbar img#header-logo
@@ -87,7 +93,7 @@ h1
 	height: var(--desktopHeaderHeight);
 	width: 100%;
 	background-color: var(--siteDarkBlue);
-	box-shadow: var(--perspectiveBoxShadow);
+	box-shadow: var(--centeredBoxShadow);
 }
 
 #navbar nav
@@ -146,11 +152,85 @@ h1
 
 #content
 {
-	margin: var(--desktopVerticalSpacing) var(--desktopSideMargin);
+	margin: var(--desktopVerticalSpacing) var(--desktopSideMargin) 0;
 }
 
 .social
 {
 	height: 17px;
 	margin-bottom: -3px;
+}
+
+.section
+{
+	display: table;
+	padding: var(--desktopPadding);
+	height: calc(var(--desktopVerticalSpacing) * 10);
+	background-color: var(--siteDarkBlue);
+	box-shadow: var(--centeredBoxShadow);
+	margin-bottom: var(--desktopVerticalSpacing);
+}
+
+.section-image
+{
+	display: table-cell;
+	width: 40%;
+	background: url('../images/stockphotos/9.jpg') no-repeat;
+	background-size: cover;
+	background-position: center top;
+	box-shadow: var(--centeredBoxShadow);   
+}
+
+.section-text
+{
+	padding: var(--desktopPadding);
+	box-shadow: var(--centeredBoxShadow);
+	background: var(--sitePurple);
+	display: table-cell;
+	vertical-align: top;
+}
+
+.section-text h1
+{
+	font-size: 2.5em;
+	color: white;
+	border-bottom: 1px dashed var(--siteGray);
+	text-align: center;
+}
+
+.section-text p
+{
+	font-size: 1.2em;
+}
+
+.section-break
+{
+	position: relative;
+	display: grid;
+	place-items: center;
+	width: 100%;
+	height: calc(var(--desktopVerticalSpacing) * 4);
+	margin-bottom: var(--desktopVerticalSpacing);
+}
+
+.section-break::before
+{
+	content: "";
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: url(../images/infographics/district6map.jpg) no-repeat fixed;
+	background-size: cover;
+	background-position: center center;
+	filter:blur(1px) brightness(70%);
+}
+
+.section-break div
+{
+	position: relative;
+	font-size: 2.5em;
+	font-family: product-sans-bold;
+	text-align: center;
+	padding: var(--desktopPadding);
+	text-shadow: 1px 1px 0 var(--siteDarkBlue);
 }
