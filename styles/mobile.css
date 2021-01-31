@@ -19,6 +19,11 @@ footer nav a
 	margin-bottom: var(--mobileVerticalSpacing);
 }
 
+p
+{
+	text-indent: 0;
+}
+
 #navbar
 {
 	z-index: 1;
@@ -84,6 +89,26 @@ footer nav a
 	padding-top: calc(var(--mobileHeaderHeight) + (var(--mobilePadding)*2));
 }
 
+.move-next-down
+{
+	margin-bottom: var(--mobileVerticalSpacing);
+}
+
+.move-next-down-small
+{
+	margin-bottom: calc(var(--mobileVerticalSpacing) / 2);
+}
+
+.move-previous-up
+{
+	margin-top: var(--mobileVerticalSpacing);
+}
+
+.move-previous-up-small
+{
+	margin-top: calc(var(--mobileVerticalSpacing) / 2);
+}
+
 .section
 {
 	padding: var(--mobilePadding);
@@ -107,19 +132,30 @@ footer nav a
 
 .section-text h1
 {
-	font-size: 2.5em;
+	font-size: 1.5em;
 }
 
 .section-text p
 {
-	font-size: 1.2em;
+	font-size: 1em;
+	text-align: center;
+}
+
+.more-btn
+{
+	display: block;
+	margin: 0 auto;
+	padding: var(--mobilePadding);
+}
+
+.more-btn span
+{
+	margin-right: calc(var(--mobilePadding) / 2);
 }
 
 .section-break
 {
 	height: calc(100vw - (var(--mobilePadding)*2));
-	margin-bottom: var(--mobileVerticalSpacing);
-	background-size: 100vw auto;
 }
 
 .section-break::before

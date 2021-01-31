@@ -76,7 +76,33 @@ h1
 p
 {
 	margin-bottom: var(--desktopPadding);
-	text-indent: var(--desktopPadding);
+	text-indent: calc(var(--desktopPadding) * 2);
+}
+
+.block-center
+{
+	display: block;
+	margin: 0 auto;
+}
+
+.move-next-down
+{
+	margin-bottom: var(--desktopVerticalSpacing);
+}
+
+.move-next-down-small
+{
+	margin-bottom: calc(var(--desktopVerticalSpacing) / 2);
+}
+
+.move-previous-up
+{
+	margin-top: var(--desktopVerticalSpacing);
+}
+
+.move-previous-up-small
+{
+	margin-top: calc(var(--desktopVerticalSpacing) / 2);
 }
 
 #navbar img#header-logo
@@ -168,14 +194,13 @@ p
 	height: calc(var(--desktopVerticalSpacing) * 10);
 	background-color: var(--siteDarkBlue);
 	box-shadow: var(--centeredBoxShadow);
-	margin-bottom: var(--desktopVerticalSpacing);
 }
 
 .section-image
 {
 	display: table-cell;
 	width: 40%;
-	background: url('../images/stockphotos/9.jpg') no-repeat;
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
 	box-shadow: var(--centeredBoxShadow);   
@@ -201,6 +226,31 @@ p
 .section-text p
 {
 	font-size: 1.2em;
+}
+
+.more-btn
+{
+	border: 1px solid white;
+	padding: var(--desktopPadding);
+	text-transform: uppercase;
+	font-family: product-sans-bold;
+	background-color: rgba(0,0,0,.15);
+}
+
+.more-btn span
+{
+	margin-right: calc(var(--desktopPadding) / 2);
+}
+
+.more-btn:hover span
+{
+	text-decoration: underline;
+}
+
+.more-btn:hover
+{
+	cursor: pointer;
+	outline: 1px solid white;
 }
 
 .section-break
