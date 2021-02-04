@@ -16,7 +16,6 @@ footer
 footer nav a
 {
 	padding: 0 var(--mobilePadding);
-	margin-bottom: var(--mobileVerticalSpacing);
 }
 
 p
@@ -155,7 +154,9 @@ p
 
 .section-break
 {
-	height: calc(100vw - (var(--mobilePadding)*2));
+	height: calc(100vw - (var(--mobileVerticalSpacing)*2));
+	width: calc(100% + var(--mobileSideMargin) * 2);
+	left: calc(-1 * var(--mobileSideMargin));
 }
 
 .section-break::before

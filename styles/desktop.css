@@ -56,7 +56,6 @@ footer nav a
 {
 	display: inline-block;
 	padding: 0 var(--desktopPadding);
-	margin-bottom: var(--desktopVerticalSpacing);
 }
 
 footer nav a:hover
@@ -258,9 +257,10 @@ p
 	position: relative;
 	display: grid;
 	place-items: center;
-	width: 100%;
+	width: calc(100% + var(--desktopSideMargin) * 2);
 	height: calc(var(--desktopVerticalSpacing) * 4);
-	margin-bottom: var(--desktopVerticalSpacing);
+	left: calc(-1 * var(--desktopSideMargin));
+	box-shadow: var(--centeredBoxShadow);   
 }
 
 .section-break::before
@@ -272,7 +272,7 @@ p
 	background: url(../images/infographics/district6map.jpg) no-repeat fixed;
 	background-size: cover;
 	background-position: center center;
-	filter:blur(1px) brightness(70%);
+	filter: blur(1px) brightness(70%);
 }
 
 .section-break div
