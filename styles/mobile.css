@@ -3,9 +3,17 @@
 
 header
 {
-	height: calc((var(--mobileHeaderHeight) + var(--mobilePadding)) * 2.8);
+	height: calc( (var(--mobileHeaderHeight) + (var(--mobilePadding) * 2)) * 2.25 );
 	background: url('../images/stockphotos/3.jpg') no-repeat fixed;
 	background-size: 100vw auto;
+}
+
+header h1
+{
+	font-size: 3em;
+	line-height: calc( ((var(--mobileHeaderHeight) + (var(--mobilePadding) * 2)) * 2.25) - var(--mobileHeaderHeight) - (var(--mobilePadding) * 2));
+	text-shadow: 0px 0px 10px rgba(0,0,0,.75);
+	letter-spacing: 0;
 }
 
 footer
@@ -25,13 +33,13 @@ p
 
 #navbar
 {
-	z-index: 1;
 	padding:  var(--mobilePadding) 0;
 	font-family: product-sans-bold;
 	height: var(--mobileHeaderHeight);
 	width: 100%;
 	background-color: var(--siteDarkBlue);
 	box-shadow: var(--perspectiveBoxShadow);
+	top: calc( ((var(--mobileHeaderHeight) + (var(--mobilePadding) * 2)) * 2.25) - var(--mobileHeaderHeight) - (var(--mobilePadding) * 2));
 }
 
 #navbar img#header-logo
@@ -78,14 +86,37 @@ p
 	position: static;
 }
 
+nav.mobile
+{
+	position: absolute;
+	display: block !important;
+	z-index: 10 !important;
+	left: 0;
+	top: calc(var(--mobileHeaderHeight) + (var(--mobilePadding *3 )));
+	text-align: center;
+	width: 100% !important;
+	height: auto !important;
+	background-color: var(--siteDarkBlue);
+}
+
+nav.mobile a
+{
+	display: block !important;
+	width: 100% !important;
+	height: var(--mobileHeaderHeight) !important;
+	padding: 0 !important;
+}
+
+nav.mobile a:hover
+{
+	text-decoration: none !important;
+	transform: none !important;
+	transition: 0;
+}
+
 #content
 {
 	margin: var(--mobileVerticalSpacing) var(--mobileSideMargin);
-}
-
-.sticky-header-spacing
-{
-	padding-top: calc(var(--mobileHeaderHeight) + (var(--mobilePadding)*2));
 }
 
 .move-next-down
@@ -132,6 +163,7 @@ p
 .section-text h1
 {
 	font-size: 1.5em;
+	padding-bottom: calc(var(--desktopPadding) * .75);
 }
 
 .section-text p

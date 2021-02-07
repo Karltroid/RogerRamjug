@@ -31,10 +31,24 @@ header
 {
 	z-index: -1;
 	width: 100%;
-	height: calc((var(--desktopHeaderHeight) + var(--desktopPadding)) * 4);
-	background: url('../images/stockphotos/8.jpg') no-repeat fixed;
+	height: calc( (var(--desktopHeaderHeight) + (var(--desktopPadding) * 2)) * 3 );
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-size: 100vw auto;
 	background-position: top center;
+	position: relative;
+	overflow: hidden;
+}
+
+header h1
+{
+	text-align: center;
+	font-family: product-sans-bold;
+	font-size: 4em;
+	line-height: calc( (var(--desktopHeaderHeight) + (var(--desktopPadding) * 2)) * 3 - (var(--desktopHeaderHeight) + var(--desktopPadding)));
+	text-shadow: 0px 0px 10px rgba(0,0,0,.75);
+	text-transform: uppercase;
+	letter-spacing: calc(var(--desktopPadding) / 2);
 }
 
 footer
@@ -69,6 +83,7 @@ h1
 {
 	font-family: product-sans-bold;
 	text-transform: uppercase;
+	padding-bottom: calc(var(--desktopPadding) * .75);
 	margin-bottom: var(--desktopPadding);
 }
 
@@ -112,13 +127,16 @@ p
 
 #navbar
 {
-	z-index: 1;
+	z-index: 10;
+	position: absolute;
+	top: calc( (var(--desktopHeaderHeight) + (var(--desktopPadding) * 2)) * 3 - (var(--desktopHeaderHeight) + var(--desktopPadding)));
 	padding:  calc(var(--desktopPadding) * .5) 0;
 	font-family: product-sans-bold;
 	height: var(--desktopHeaderHeight);
 	width: 100%;
-	background-color: var(--siteDarkBlue);
+	background-color: rgba(0,0,0,.25);
 	box-shadow: var(--centeredBoxShadow);
+	backdrop-filter: blur(2px);
 }
 
 #navbar nav
@@ -150,13 +168,8 @@ p
 
 .sticky-header
 {
-	position: fixed;
-	top: 0;
-}
-
-.sticky-header-spacing
-{
-	padding-top: calc(var(--desktopHeaderHeight) + var(--desktopPadding));
+	position: fixed !important;
+	top: 0 !important;
 }
 
 .desktop
@@ -192,7 +205,7 @@ p
 	padding: var(--desktopPadding);
 	height: calc(var(--desktopVerticalSpacing) * 10);
 	background-color: var(--siteDarkBlue);
-	box-shadow: var(--centeredBoxShadow);
+	box-shadow: var(--perspectiveBoxShadow);
 }
 
 .section-image
@@ -202,13 +215,14 @@ p
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
-	box-shadow: var(--centeredBoxShadow);   
+	box-shadow: var(--innerBoxShadow);
+	z-index: -1;  
 }
 
 .section-text
 {
 	padding: var(--desktopPadding);
-	box-shadow: var(--centeredBoxShadow);
+	box-shadow: var(--perspectiveBoxShadow);
 	background: var(--sitePurple);
 	display: table-cell;
 	vertical-align: top;
@@ -220,6 +234,7 @@ p
 	color: white;
 	border-bottom: 1px dashed var(--siteGray);
 	text-align: center;
+	text-shadow: 0px 1.5px 1px var(--siteGreen);
 }
 
 .section-text p
@@ -233,7 +248,8 @@ p
 	padding: var(--desktopPadding);
 	text-transform: uppercase;
 	font-family: product-sans-bold;
-	background-color: rgba(0,0,0,.15);
+	background-color: rgba(0,0,0,.2);
+	box-shadow: var(--perspectiveBoxShadow);
 }
 
 .more-btn span
@@ -250,6 +266,7 @@ p
 {
 	cursor: pointer;
 	outline: 1px solid white;
+	box-shadow: var(--innerBoxShadow), var(--perspectiveBoxShadow);
 }
 
 .section-break
@@ -260,7 +277,6 @@ p
 	width: calc(100% + var(--desktopSideMargin) * 2);
 	height: calc(var(--desktopVerticalSpacing) * 4);
 	left: calc(-1 * var(--desktopSideMargin));
-	box-shadow: var(--centeredBoxShadow);   
 }
 
 .section-break::before
@@ -273,6 +289,7 @@ p
 	background-size: cover;
 	background-position: center center;
 	filter: blur(1px) brightness(70%);
+	box-shadow: var(--innerBoxShadow);
 }
 
 .section-break div
@@ -282,5 +299,5 @@ p
 	font-family: product-sans-bold;
 	text-align: center;
 	padding: var(--desktopPadding);
-	text-shadow: 1px 1px 0 var(--siteDarkBlue);
+	text-shadow: 0px 1.5px 1px var(--siteGreen);
 }
