@@ -82,6 +82,16 @@ p
 	text-indent: calc(var(--desktopPadding) * 2);
 }
 
+a.current-page
+{
+	text-decoration: underline solid 3px var(--siteDarkPurple) !important;
+}
+
+a.current-page:hover
+{
+	color: var(--siteGray);
+}
+
 .block-center
 {
 	display: block;
@@ -206,6 +216,25 @@ p
 	box-shadow: var(--innerBoxShadow);
 	z-index: -1;  
 }
+
+.section-slideshow
+{
+	display: table-cell;
+	width: 40%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	box-shadow: var(--innerBoxShadow);
+	z-index: -1;  
+	position: relative;
+}
+
+.section-slideshow > div
+{
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+}
+
 
 .section-text
 {
