@@ -40,17 +40,6 @@ header
 	overflow: hidden;
 }
 
-header h1
-{
-	text-align: center;
-	font-family: product-sans-bold;
-	font-size: 4em;
-	line-height: calc( (var(--desktopHeaderHeight) + (var(--desktopPadding) * 2)) * 4 - (var(--desktopHeaderHeight) + var(--desktopPadding)));
-	text-shadow: 0px 0px 10px rgba(0,0,0,.75);
-	text-transform: uppercase;
-	letter-spacing: calc(var(--desktopPadding) / 2);
-}
-
 footer
 {
 	box-shadow: var(--centeredBoxShadow);

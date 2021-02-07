@@ -2,8 +2,3 @@ header
 {
 	background-size: auto calc( (var(--mobileHeaderHeight) + (var(--mobilePadding) * 2)) * 2.5 );
 }
-
-.section-break
-{
-	font-size: .69em;
-}

@@ -1,7 +1,8 @@
 header
 {
-	background-size: auto calc( (var(--desktopHeaderHeight) + (var(--desktopPadding) * 2)) * 4 );
+	background-size: 111vw auto;
 	background-position: top left;
+
 }
 
 #navbar nav
@@ -18,4 +19,15 @@ header
 #content
 {
 	margin: var(--desktopVerticalSpacing) calc(var(--desktopSideMargin) / 3) 0;
+}
+
+.section-break
+{
+	width: calc(100% + (var(--desktopSideMargin)/2) * 2);
+	left: calc(-1 * var(--desktopSideMargin) / 2);
+}
+
+.section-break div
+{
+	padding: calc(var(--desktopPadding) / 2);
 }
