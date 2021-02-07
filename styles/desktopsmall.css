@@ -1,0 +1,21 @@
+header
+{
+	background-size: auto calc( (var(--desktopHeaderHeight) + (var(--desktopPadding) * 2)) * 4 );
+	background-position: top left;
+}
+
+#navbar nav
+{
+	margin-right: calc((var(--desktopSideMargin) - var(--desktopPadding)) / 3);
+}
+
+#navbar img#header-logo
+{
+	height: 100%;
+	margin-left: calc(var(--desktopSideMargin) / 3);
+}
+
+#content
+{
+	margin: var(--desktopVerticalSpacing) calc(var(--desktopSideMargin) / 3) 0;
+}

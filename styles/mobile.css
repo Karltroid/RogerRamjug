@@ -3,16 +3,18 @@
 
 header
 {
-	height: calc( (var(--mobileHeaderHeight) + (var(--mobilePadding) * 2)) * 2.25 );
-	background: url('../images/stockphotos/3.jpg') no-repeat fixed;
+	height: calc( (var(--mobileHeaderHeight) + (var(--mobilePadding) * 2)) * 2.5 );
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-size: 100vw auto;
+	background-position: top left;
 }
 
 header h1
 {
 	font-size: 3em;
-	line-height: calc( ((var(--mobileHeaderHeight) + (var(--mobilePadding) * 2)) * 2.25) - var(--mobileHeaderHeight) - (var(--mobilePadding) * 2));
-	text-shadow: 0px 0px 10px rgba(0,0,0,.75);
+	line-height: calc( ((var(--mobileHeaderHeight) + (var(--mobilePadding) * 2)) * 2.5) - var(--mobileHeaderHeight) - (var(--mobilePadding) * 2));
+	text-shadow: 0px 0px 10px rgba(0,0,0,.5);
 	letter-spacing: 0;
 }
 
@@ -39,7 +41,7 @@ p
 	width: 100%;
 	background-color: var(--siteDarkBlue);
 	box-shadow: var(--perspectiveBoxShadow);
-	top: calc( ((var(--mobileHeaderHeight) + (var(--mobilePadding) * 2)) * 2.25) - var(--mobileHeaderHeight) - (var(--mobilePadding) * 2));
+	top: calc( ((var(--mobileHeaderHeight) + (var(--mobilePadding) * 2)) * 2.5) - var(--mobileHeaderHeight) - (var(--mobilePadding) * 2));
 }
 
 #navbar img#header-logo
@@ -189,6 +191,7 @@ nav.mobile a:hover
 	height: calc(100vw - (var(--mobileVerticalSpacing)*2));
 	width: calc(100% + var(--mobileSideMargin) * 2);
 	left: calc(-1 * var(--mobileSideMargin));
+	font-size: .9em;
 }
 
 .section-break::before

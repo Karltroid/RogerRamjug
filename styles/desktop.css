@@ -31,7 +31,7 @@ header
 {
 	z-index: -1;
 	width: 100%;
-	height: calc( (var(--desktopHeaderHeight) + (var(--desktopPadding) * 2)) * 3 );
+	height: calc( (var(--desktopHeaderHeight) + (var(--desktopPadding) * 2)) * 4 );
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100vw auto;
@@ -45,7 +45,7 @@ header h1
 	text-align: center;
 	font-family: product-sans-bold;
 	font-size: 4em;
-	line-height: calc( (var(--desktopHeaderHeight) + (var(--desktopPadding) * 2)) * 3 - (var(--desktopHeaderHeight) + var(--desktopPadding)));
+	line-height: calc( (var(--desktopHeaderHeight) + (var(--desktopPadding) * 2)) * 4 - (var(--desktopHeaderHeight) + var(--desktopPadding)));
 	text-shadow: 0px 0px 10px rgba(0,0,0,.75);
 	text-transform: uppercase;
 	letter-spacing: calc(var(--desktopPadding) / 2);
@@ -129,7 +129,7 @@ p
 {
 	z-index: 10;
 	position: absolute;
-	top: calc( (var(--desktopHeaderHeight) + (var(--desktopPadding) * 2)) * 3 - (var(--desktopHeaderHeight) + var(--desktopPadding)));
+	top: calc( (var(--desktopHeaderHeight) + (var(--desktopPadding) * 2)) * 4 - (var(--desktopHeaderHeight) + var(--desktopPadding)));
 	padding:  calc(var(--desktopPadding) * .5) 0;
 	font-family: product-sans-bold;
 	height: var(--desktopHeaderHeight);
@@ -137,6 +137,7 @@ p
 	background-color: rgba(0,0,0,.25);
 	box-shadow: var(--centeredBoxShadow);
 	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
 }
 
 #navbar nav
@@ -162,8 +163,6 @@ p
 #navbar a:hover
 {
 	text-decoration: underline;
-	transform: scale(1.05);
-	transition: .25s;
 }
 
 .sticky-header

@@ -27,13 +27,13 @@
 
 	/* paddings & margins */
 	--desktopSideMargin: 80px;
-	--mobileSideMargin: 15px;
+	--mobileSideMargin: 10px;
 	--desktopVerticalSpacing: 50px;
 	--mobileVerticalSpacing: 25px;
 	--desktopHeaderHeight: 80px;
 	--mobileHeaderHeight: 60px;
 	--desktopPadding: 20px;
-	--mobilePadding: 15px;
+	--mobilePadding: 10px;
 	--centerBlock: 0 auto;
 
 	/* box shadows */
