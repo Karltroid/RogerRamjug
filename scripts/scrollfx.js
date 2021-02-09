@@ -4,11 +4,9 @@ var progress = 0, headerR = 37, headerG = 39, headerB = 77;  // integers
 
 window.addEventListener("load", function()
 {
-    // get the page elements and update the nav bar when the page loads
-    header = document.getElementsByTagName("header")[0];
-    navbar = document.getElementById("navbar");
-    content = document.getElementById("content");
-	update_navbar();
+    // get the variables an dupdate the navbar when the page finishes loading
+    update_vars();
+    update_navbar();
 });
 
 
@@ -17,6 +15,15 @@ document.addEventListener('scroll', function()
 	// update nav bar when the user is scrolling
 	update_navbar();
 });
+
+
+function update_vars()
+{
+    // get the elements of the page that are used throughout the script
+    header = document.getElementsByTagName("header")[0];
+    navbar = document.getElementById("navbar");
+    content = document.getElementById("content");
+}
 
 
 function update_navbar()

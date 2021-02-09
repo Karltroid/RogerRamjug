@@ -197,6 +197,52 @@ a.current-page:hover
 	margin-bottom: -3px;
 }
 
+.overlay
+{
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,.4);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+}
+
+.overlay-close-btn
+{
+	position: absolute;
+	top: var(--desktopPadding);
+	left: var(--desktopSideMargin);
+	font-size: 2em;
+	font-family: product-sans-bold;
+	padding: var(--mobilePadding) calc(var(--mobileSideMargin) * 2);
+	background-color: var(--siteDarkBlue);
+	z-index: 101;
+	text-transform: uppercase;
+	box-shadow: var(--perspectiveBoxShadow);
+	text-shadow: 0px 1.5px 1px var(--siteGreen);
+}
+
+.overlay-close-btn:hover
+{
+	cursor: pointer;
+	outline: 1px solid white;
+	box-shadow: var(--innerBoxShadow), var(--perspectiveBoxShadow);
+}
+
+.overlay-content
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: calc(100% - (var(--desktopSideMargin) * 2));
+	height: calc(100% - (var(--desktopPadding) * 2));
+	box-shadow: var(--perspectiveBoxShadow);
+}
+
 .section
 {
 	display: table;
@@ -267,6 +313,7 @@ a.current-page:hover
 	font-family: product-sans-bold;
 	background-color: rgba(0,0,0,.2);
 	box-shadow: var(--perspectiveBoxShadow);
+	text-shadow: 0px 1.5px 1px var(--siteGreen);
 }
 
 .more-btn span
@@ -277,6 +324,7 @@ a.current-page:hover
 .more-btn:hover span
 {
 	text-decoration: underline;
+	text-shadow: none;
 }
 
 .more-btn:hover

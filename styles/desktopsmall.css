@@ -31,3 +31,14 @@ header
 {
 	padding: calc(var(--desktopPadding) / 2);
 }
+
+.overlay-close-btn
+{
+	left: calc(var(--desktopSideMargin) / 2);
+	padding: var(--mobilePadding) calc(var(--mobileSideMargin) * 2);
+}
+
+.overlay-content
+{
+	width: calc(100% - var(--desktopSideMargin));
+}
