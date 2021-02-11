@@ -1,13 +1,25 @@
 /* Hide scrollbar for mobile */
 ::-webkit-scrollbar { display: none; }
 
+body
+{
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
 header
 {
 	height: calc( (var(--mobileHeaderHeight) + (var(--mobilePadding) * 2)) * 2.5 );
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: 100vw auto;
+	background-size: 110vw auto;
 	background-position: top left;
+}
+
+header#my-platform
+{
+	background-position: 50% -125px;
+	background-size: 130vw auto;
 }
 
 footer
@@ -178,6 +190,7 @@ nav.mobile a:hover
 	padding: var(--mobilePadding);
 	height: calc(var(--mobileVerticalSpacing) * 10);
 	margin-bottom: var(--mobileVerticalSpacing);
+	width: calc(100% - (var(--mobilePadding) * 2));
 }
 
 .section-image
@@ -196,7 +209,6 @@ nav.mobile a:hover
 
 .section-text h1
 {
-	font-size: 1.5em;
 	padding-bottom: calc(var(--desktopPadding) * .75);
 }
 

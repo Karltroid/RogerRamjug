@@ -1,4 +1,11 @@
-header
+header#home
 {
-	background-size: auto calc( (var(--mobileHeaderHeight) + (var(--mobilePadding) * 2)) * 2.5 );
+	background-size: 200vw auto;
+	background-position: top left;
+}
+
+header#my-platform
+{
+	background-position: 50% -100px;
+	background-size: 150vw auto;
 }

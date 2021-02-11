@@ -38,7 +38,7 @@ function update_navbar()
 	}
 	else
 	{
-	
+		// make the header scroll with the screen & dynamically blur/color header with scroll pos
 		navbar.classList.remove("sticky-header");
 		navbar.style.background = "rgba("
 		                        + (progress * headerR) + ","  // red
@@ -47,6 +47,7 @@ function update_navbar()
 		                        + (progress + .225) + ")";    // opacity
 		
 		header.style.filter = "blur(" + (progress * 2.5) + "px)";
+		header.style.webkitFilter = "blur(" + (progress * 2.5) + "px)";
 		//navbar.style.boxShadow = "0 10px 20px rgba(0, 0, 0,"+ (.19 - (scrollPos/(header.clientHeight * 4))) + "), 0 6px 6px rgba(0, 0, 0," + (.23 - (scrollPos/(header.clientHeight * 4))) +")";
 	}
 }

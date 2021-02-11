@@ -8,10 +8,10 @@ window.addEventListener("load", function()
 });
 
 
-function open_overlay()
+function open_overlay(pdf)
 {
 	// append the overlay to the end of the body and disable scrolling of the webpage
-	body.innerHTML = body.innerHTML + "<div class='overlay' onclick='close_overlay();'><button class='overlay-close-btn' onclick='close_overlay();'>&#9664; Exit</button><iframe class='overlay-content' src='pdfs/map.pdf'></iframe></div>";
+	body.innerHTML = body.innerHTML + "<div class='overlay' onclick='close_overlay();'><button class='overlay-close-btn' onclick='close_overlay();'>&#9664; Exit</button><iframe class='overlay-content' src='" + pdf + "'></iframe></div>";
 	body.style.overflow = "hidden";
 }
 

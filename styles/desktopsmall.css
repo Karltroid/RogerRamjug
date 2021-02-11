@@ -2,12 +2,40 @@ header
 {
 	background-size: 111vw auto;
 	background-position: top left;
+}
 
+header#my-platform
+{
+	background-position: 50% -200px;
+}
+
+h2
+{
+	border-bottom: solid 3px var(--siteDarkPurple);
+	display: inline-block;
+}
+
+p
+{
+	margin-bottom: var(--desktopPadding);
+	text-indent: calc(var(--desktopPadding));
+}
+
+ul
+{
+	list-style: none;
+	margin: calc(var(--desktopPadding) / 3) 0 var(--desktopPadding);
+}
+
+li
+{
+	padding: 0 0 calc(var(--desktopPadding) / 3);
+	margin-left: calc(var(--desktopPadding));
 }
 
 #navbar nav
 {
-	margin-right: calc((var(--desktopSideMargin) - var(--desktopPadding)) / 3);
+	margin-right: calc((var(--desktopSideMargin) - var(--desktopPadding)) / 4);
 }
 
 #navbar img#header-logo
