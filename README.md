@@ -1,2 +1,2 @@
-# RogerRamjug
-Temporary hosting location for testing site I am working on
+# Roger Ramjug
+Visit https://RogerRamjug.com to view the final site in action.
