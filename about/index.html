@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<!-- meta/seo info-->
-		<meta name="title" content="Roger Ramjug">
-		<meta name="description" content="Learn all about Roger Ramjug, 2021 Orange County NY Legislative District 6 Candidate. Roger Ramjug has been a resident of Newburgh for over 50 years.">
-		<meta name="keywords" content="Roger, Ramjug, Ramjugs, Orange County, NY Legislative, District 6, Candidate, Legislator">
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-language" content='en-US'>
 		<meta name="robots" content="index, follow">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="title" content="Roger Ramjug">
+		<meta name="description" content="Learn all about Roger Ramjug, 2021 Orange County NY Legislative District 6 Democrat.">
+		<meta name="keywords" content="Roger, Ramjug, Ramjugs, Orange County, NY Legislative, District 6, Candidate, Democrat, Legislator">
 		<meta name="language" content="English">
-		<meta name="author" content="Roger Ramjug, Karl Palmer, Chrisitan Ramjug">
+		<meta name="author" content="Roger Ramjug">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- stylesheets & scripts -->
@@ -19,16 +22,20 @@
 		<link rel="stylesheet" type="text/css" media="(max-width: 480px)" href="../styles/mobile2.css">
 		<script src="../scripts/scrollfx.js"></script>
 		<script src="../scripts/overlay.js"></script>
+		<script src="../scripts/mobilenav.js"></script>
+		<script src="../scripts/slidingbg.js"></script>
 
 		<!-- site title & icon -->
-		<link rel="icon" type="image/x-icon" href="../images/media/favicon.png">
-		<title>Roger Ramjug</title>
+		<link rel="shortcut icon" href="../images/media/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../images/media/favicon.ico" type="image/x-icon">
+		<title>Roger Ramjug | About</title>
 	</head>
 	<body>
 
-		<div style="overflow: hidden;">
+		<div style="overflow: hidden;" class="move-next-down">
 			<header style="background-image: url('../images/stockphotos/12.jpg');">
 				<!-- header/banner image slide show -->
+				<h1 style="opacity: 0; pointer-events: none; position: absolute;">Roger Ramjug | About</h1>
 			</header>
 
 		</div>
@@ -39,12 +46,21 @@
 				<a href="../">Home</a>
 				<a href="" id="current-page">About</a>
 				<a href="../myplatform/">My Platform</a>
+				<a href="../thetrail/">The Trail</a>
 				<a href="https://solo.to/rogerdramjug" target="_blank">Connect</a>
-				<a href="https://democracyengine.com/" target="_blank">Contribute</a>
+				<a href="https://secure.anedot.com/roger-ramjug/donate" target="_blank">Contribute</a>
 			</nav>
-			<button class="mobile">
-				<img src="../images/buttons/menu.png" />
+			<button class="mobile" onclick="openclose_menu('../');">
+				<img src="../images/buttons/menu.png" alt="Menu" id="mobile-nav-btn" />
 			</button>
+			<nav class="mobile" id="mobile-nav">
+				<a href="../">Home</a>
+				<a href="">About</a>
+				<a href="../myplatform/">My Platform</a>
+				<a href="../thetrail/">On The Trail</a>
+				<a href="https://solo.to/rogerdramjug" target="_blank">Connect</a>
+				<a href="https://secure.anedot.com/roger-ramjug/donate" target="_blank">Contribute</a>
+			</nav>
 		</div>
 
 		<div id="content">
@@ -59,64 +75,55 @@
 					</div>-->
 				</div>
 				<div class="section-text">
-					<h1>About Roger David Ramjug</h1>
+					<h2>Who Is Roger David Ramjug?</h2>
 
-					<h2>Biography</h2>
+					<h3>History</h3>
 					<ul>
 						<li>Native of Trinidad and Tobago – <i>Migrated to the United States in July of 1969.</i></li>
-						<li>Child Resident of St. Cabrini Children’s Home</li>
-						<li>Introduced to the Newburgh community in 1971. Foster child to the late Alfred and Annunciata Prokosch. (A. Prokosch and Sons Commercial Mechanical Contractors, Newburgh, N.Y.) </li>
 						<li>Active community member of the City and Town of Newburgh for over fifty years</li>
-						<li>Proud graduate of the Newburgh Enlarged City School District</li>
-						<li>United States Military Service – <i>USAF – Flight line Air Refueling</i></li>
-						<li>Naturalized United States Citizen – <i>July, 1982</i></li>
+						<li>38-year resident of our County Legislative District</li>
+						<li>Graduate of Newburgh Free Academy</li>
+						<li>Member Sheet Metal Workers Union, Local 38</li>
+						<li>22 years as a Public Education Administrator</li>
+						<li>13 years in the Newburgh Enlarged School District</li>
 					</ul>
 
-					<h2>Family</h2>
+					<h3>Family</h3>
 					<ul>
-						<li>Married to Brenda Ramjug</li>
-						<li>Four children - <i>Rebecca, Grace, Luke, and Christian Ramjug</i></li>
+						<li>Homeowner, married to Brenda <i>(Maher)</i></li>
+						<li>Four children - <i>Rebecca, Grace, Luke, and Christian</i></li>
 					</ul>
 				</div>
 			</div>
 
-			<div class="section-break move-next-down" style="overflow: hidden;">
+			<div class="section-break move-next-down aboutbg" id="section-break-slideshow">
 				<div>
-					2021 Orange County NY Legislative District 6 Candidate
-					<button class="more-btn block-center move-previous-up-small" onclick="open_overlay('../pdfs/map.pdf');">
-						<span>View Map</span>&#9654;
-					</button>
+					<span class="section-break-title">Stay up to Date and follow my social media</span>
+					<a href="https://solo.to/rogerdramjug" target="_blank"><button class="more-btn block-center move-previous-up-small">
+						<span>Connect With Me</span>&#9654;
+					</button></a>
 				</div>
 			</div>
 
 			<div class="section move-next-down">
 				
 				<div class="section-text">
-					<h1>My History and Accomplishments</h1>
+					<h2>My History and Accomplishments</h2>
 					
-					<h2>Leadership Experience</h2>
+					<h3>Public Service</h3>
 					<ul>
-						<li>National Labor College – <i>Alumni Association Founding President</i></li>
-						<li>US Labor Federation - <i>National Labor College Board of Directors</i></li>
-						<li>Town of Newburgh Ethics Board - <i>Chairman</i></li>
-						<li>St. Cabrini Children’s Home – <i>Board of Trustees</i></li>
-						<li>Orange County Ethics Board Member</li>
-						<li>The Newburgh Ministry – <i>Board of Directors - Vice President</i></li>
-						<li>Leadership Orange Class of 2009 – <i>Class President</i></li>
-						<li>Leadership Orange Board of Directors- <i>Trustee</i></li>
-						<li>Public Education Administration – <i>The Newburgh Enlarged City School District & Marlboro Central School District</i></li>
-						<li>Vocational Education Leader - <i>Sheet Metal Workers International Association</i></li>
-						<li>Renewable Energy Industry Strategic Partnership</li>
-						<li>New York State Education Department - <i>School District Infrastructure Development</i></li>
+						<li>Veteran, United States Air Force <i>(Sergeant, Ret)</i></li>
+						<li>Former Vice-President of the Executive Board of The Newburgh Ministry</li>
+						<li>Former Trustee on the Board of Directors of The National Labor College</li>
+						<li>Former Chair and Member of the Town of Newburgh Ethics Board</li>
+						<li>Former Member of the Orange County Ethics Board</li>
 					</ul>
 
-					<h2>Education</h2>
+					<h3>Education</h3>
 					<ul>
-						<li>B.S. Labor Education - <i>National Labor College</i></li>
-						<li>B.A. Labor Administration</li>
+						<li>B.S., B.A Labor Education - <i>National Labor College</i></li>
 						<li>M.A. Public Administration - <i>University of Maryland</i></li>
-						<li>M.A. Education Administration - <i>State University of New York at New Paltz</i></li>
-						<li>CAS Education Business Administration – <i>State University of New York at Buffalo</i></li>
+						<li>M.S. Education Administration - <i>SUNY New Paltz</i></li>
 					</ul>
 
 					<a href="https://linkedin.com/in/roger-ramjug-65b67a4a"><button class="more-btn">
@@ -129,11 +136,12 @@
 
 		<footer>
 			<nav><!--
-				--><a class="move-next-down" href = "https://facebook.com/roger.ramjug"><img class="social" src="../images/media/facebook.png" />Facebook</a><!--
-				--><a class="move-next-down" href = "https://twitter.com/rogerdramjug"><img class="social" src="../images/media/twitter.png" />Twitter</a><!--
-				--><a class="move-next-down" href = "https://instagram.com/rogerdramjug"><img class="social" src="../images/media/instagram.png" />Instagram</a><!--
-				--><a class="move-next-down" href = "https://linkedin.com/in/roger-ramjug-65b67a4a"><img class="social" src="../images/media/linkedin.png" />LinkedIn</a><!--
-				--><a class="move-next-down" href = "mailto:rogerdramjug@gmail.com"><img class="social" src="../images/media/email.png" />Email</a>
+				--><a class="move-next-down" href = "https://facebook.com/roger.ramjug"><img class="social" src="../images/media/facebook.png" alt="Facebook Logo" />Facebook</a><!--
+				--><a class="move-next-down" href = "https://twitter.com/rogerdramjug"><img class="social" src="../images/media/twitter.png" alt="Twitter Logo" />Twitter</a><!--
+				--><a class="move-next-down" href = "https://instagram.com/rogerdramjug"><img class="social" src="../images/media/instagram.png" alt="Instagram Logo" />Instagram</a><!--
+				--><a class="move-next-down" href = "https://linkedin.com/in/roger-ramjug-65b67a4a"><img class="social" src="../images/media/linkedin.png" alt="LinkedIn Logo" />LinkedIn</a><!--
+				--><a class="move-next-down" href = "mailto:ElectRogerDRamjug@Gmail.com"><img class="social" src="../images/media/mail.png" alt="Email: " />ElectRogerDRamjug@Gmail.com</a><!--
+				--><a class="move-next-down" href = "tel:845-728-4466"><img class="social" src="../images/media/phone.png" alt="Phone #" />845-728-4466</a>
 			</nav>
 			<aside>
 				<font style="font-family: Arial;">&copy;</font> 2020-2021 Roger Ramjug<br />

@@ -19,7 +19,7 @@ function close_overlay()
 {
 	// find the overlay element, remove it, and allow scrolling of the webpage again
 	document.getElementsByClassName("overlay")[0].remove();
-	body.style.overflow = "visible";
+	body.style.overflow = "scroll";
 
 	update_vars(); // update the variables for the scrollfx script
 }

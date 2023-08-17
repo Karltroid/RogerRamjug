@@ -1,0 +1,86 @@
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://www.rogerramjug.com/</loc>
+  <lastmod>2021-02-11T01:01:01+01:01</lastmod>
+  <priority>1.00</priority>
+  <image:image>
+    <image:loc>https://www.rogerramjug.com/images/stockphotos/16.jpg</image:loc>
+    <image:geo_location>Newburgh, New York</image:geo_location>
+  </image:image>
+  <image:image>
+    <image:loc>https://www.rogerramjug.com/images/stockphotos/3.jpg</image:loc>
+    <image:geo_location>Newburgh, New York</image:geo_location>
+  </image:image>
+  <image:image>
+    <image:loc>https://www.rogerramjug.com/images/stockphotos/20.jpg</image:loc>
+    <image:geo_location>Newburgh, New York</image:geo_location>
+  </image:image>
+  <image:image>
+    <image:loc>https://www.rogerramjug.com/images/stockphotos/21.jpg</image:loc>
+    <image:geo_location>Newburgh, New York</image:geo_location>
+  </image:image>
+</url>
+<url>
+  <loc>https://www.rogerramjug.com/about/</loc>
+  <lastmod>2021-02-11T01:01:01+01:01</lastmod>
+  <priority>0.80</priority>
+  <image:image>
+    <image:loc>https://www.rogerramjug.com/images/stockphotos/12.jpg</image:loc>
+    <image:geo_location>Newburgh, New York</image:geo_location>
+  </image:image>
+  <image:image>
+    <image:loc>https://www.rogerramjug.com/images/stockphotos/13.jpg</image:loc>
+    <image:geo_location>Newburgh, New York</image:geo_location>
+  </image:image>
+  <image:image>
+    <image:loc>https://www.rogerramjug.com/images/stockphotos/10.jpg</image:loc>
+    <image:geo_location>Newburgh, New York</image:geo_location>
+  </image:image>
+</url>
+<url>
+  <loc>https://www.rogerramjug.com/myplatform/</loc>
+  <lastmod>2021-02-11T01:01:01+01:01</lastmod>
+  <priority>0.80</priority>
+  <image:image>
+    <image:loc>https://www.rogerramjug.com/images/stockphotos/4.jpg</image:loc>
+    <image:geo_location>Newburgh, New York</image:geo_location>
+  </image:image>
+  <image:image>
+    <image:loc>https://www.rogerramjug.com/images/stockphotos/15.jpg</image:loc>
+    <image:geo_location>Newburgh, New York</image:geo_location>
+  </image:image>
+  <image:image>
+    <image:loc>https://www.rogerramjug.com/images/infographics/district6map_full.jpg</image:loc>
+    <image:geo_location>Newburgh, New York</image:geo_location>
+  </image:image>
+</url>
+<url>
+  <loc>https://www.rogerramjug.com/thetrail/</loc>
+  <lastmod>2021-03-13T01:01:01+01:01</lastmod>
+  <priority>0.80</priority>
+  <image:image>
+    <image:loc>https://www.rogerramjug.com/images/stockphotos/17.jpg</image:loc>
+    <image:geo_location>Newburgh, New York</image:geo_location>
+  </image:image>
+  <image:image>
+    <image:loc>https://www.rogerramjug.com/images/thetrail/11.jpg</image:loc>
+    <image:geo_location>Newburgh, New York</image:geo_location>
+  </image:image>
+  <image:image>
+    <image:loc>https://www.rogerramjug.com/images/stockphotos/19.jpg</image:loc>
+    <image:geo_location>Newburgh, New York</image:geo_location>
+  </image:image>
+  <image:image>
+    <image:loc>https://www.rogerramjug.com/images/stockphotos/18.jpg</image:loc>
+    <image:geo_location>Newburgh, New York</image:geo_location>
+  </image:image>
+</url>
+
+
+</urlset>

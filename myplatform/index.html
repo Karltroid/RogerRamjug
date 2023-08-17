@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<!-- meta/seo info-->
-		<meta name="title" content="Roger Ramjug">
-		<meta name="description" content="Learn all about Roger Ramjug, 2021 Orange County NY Legislative District 6 Candidate. Roger Ramjug has been a resident of Newburgh for over 50 years.">
-		<meta name="keywords" content="Roger, Ramjug, Ramjugs, Orange County, NY Legislative, District 6, Candidate, Legislator">
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-language" content='en-US'>
 		<meta name="robots" content="index, follow">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="title" content="Roger Ramjug">
+		<meta name="description" content="Learn all about Roger Ramjug, 2021 Orange County NY Legislative District 6 Democrat.">
+		<meta name="keywords" content="Roger, Ramjug, Ramjugs, Orange County, NY Legislative, District 6, Candidate, Democrat, Legislator">
 		<meta name="language" content="English">
-		<meta name="author" content="Roger Ramjug, Karl Palmer, Chrisitan Ramjug">
+		<meta name="author" content="Roger Ramjug">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- stylesheets & scripts -->
@@ -19,16 +22,19 @@
 		<link rel="stylesheet" type="text/css" media="(max-width: 480px)" href="../styles/mobile2.css">
 		<script src="../scripts/scrollfx.js"></script>
 		<script src="../scripts/overlay.js"></script>
+		<script src="../scripts/mobilenav.js"></script>
 
 		<!-- site title & icon -->
-		<link rel="icon" type="image/x-icon" href="../images/media/favicon.png">
-		<title>Roger Ramjug</title>
+		<link rel="shortcut icon" href="../images/media/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../images/media/favicon.ico" type="image/x-icon">
+		<title>Roger Ramjug | My Platform</title>
 	</head>
 	<body>
 
-		<div style="overflow: hidden;">
+		<div style="overflow: hidden;" class="move-next-down">
 			<header style="background-image: url('../images/stockphotos/4.jpg');" id="my-platform">
 				<!-- header/banner image slide show -->
+				<h1 style="opacity: 0; pointer-events: none; position: absolute;">Roger Ramjug | My Platform</h1>
 			</header>
 
 		</div>
@@ -39,12 +45,21 @@
 				<a href="../">Home</a>
 				<a href="../about/">About</a>
 				<a href="" id="current-page">My Platform</a>
+				<a href="../thetrail/">The Trail</a>
 				<a href="https://solo.to/rogerdramjug" target="_blank">Connect</a>
-				<a href="https://democracyengine.com/" target="_blank">Contribute</a>
+				<a href="https://secure.anedot.com/roger-ramjug/donate" target="_blank">Contribute</a>
 			</nav>
-			<button class="mobile">
-				<img src="../images/buttons/menu.png" />
+			<button class="mobile" id="mobile-nav-btn" onclick="openclose_menu('../');">
+				<img src="../images/buttons/menu.png" alt="Menu" />
 			</button>
+			<nav class="mobile" id="mobile-nav">
+				<a href="../">Home</a>
+				<a href="../about/">About</a>
+				<a href="">My Platform</a>
+				<a href="../thetrail/">On The Trail</a>
+				<a href="https://solo.to/rogerdramjug" target="_blank">Connect</a>
+				<a href="https://secure.anedot.com/roger-ramjug/donate" target="_blank">Contribute</a>
+			</nav>
 		</div>
 
 		<div id="content">
@@ -59,21 +74,22 @@
 					</div>-->
 				</div>
 				<div class="section-text">
-					<h1>My Platform</h1>
+					<h2>My Platform</h2>
+					
+					<q>We have a tremendous amount of work ahead of us to restore and revitalize our community</q>
 
-					<p>I consider myself qualified and equally as passionate to serve as the Orange County Legislator for District 6, representing both the Town and City of Newburgh. My longevity and service to the Newburgh community combined with my long term administrative experience in Public Education, Labor Administration, and Public Service has enabled me to be keenly aware of the challenges and complexities confronting our citizens, parents, homeowners, for-profit and non-profit organizations, businesses, social and spiritual organizations, and government leaders.</p>
-
-					<p>Yet as I examine and observe our wonderful community, I believe that we undeniably have the means, the resources, the wherewithal and most importantly the desire to make everyday life for the people of Newburgh better. It is my goal to provide the leadership necessary for us to succeed in all areas of community life.</p>
-
-					<p>We can accomplish this through targeted planning and infrastructure development, meaningful environmental and quality of life improvements, goal-oriented economic and employment opportunities and safe, extracurricular, recreational and academic developmental opportunities for our children.</p> 
-
-					<p>With your support, I look forward to providing highly-effective leadership as your representative in the Orange County Legislature.</p>
+					<ol>
+						<li>Secure our fair share of County funds</li>
+						<li>Provide pathways for good paying local jobs</li>
+						<li>Institute accountability and transparency of the Orange County Industrial Development Agency <i>(IDA)</i> to safeguard our tax dollars</li>
+						<li class="last">Aquire funding for infrastructure development</li>
+					</ol>
 				</div>
 			</div>
 
-			<div class="section-break move-next-down" style="overflow: hidden;">
+			<div class="section-break move-next-down platformbg">
 				<div>
-					2021 Orange County NY Legislative District 6 Candidate
+					<span class="section-break-title">2021 Orange County NY Legislative District 6</span>
 					<button class="more-btn block-center move-previous-up-small" onclick="open_overlay('../pdfs/map.pdf');">
 						<span>View Map</span>&#9654;
 					</button>
@@ -84,11 +100,12 @@
 
 		<footer>
 			<nav><!--
-				--><a class="move-next-down" href = "https://facebook.com/roger.ramjug"><img class="social" src="../images/media/facebook.png" />Facebook</a><!--
-				--><a class="move-next-down" href = "https://twitter.com/rogerdramjug"><img class="social" src="../images/media/twitter.png" />Twitter</a><!--
-				--><a class="move-next-down" href = "https://instagram.com/rogerdramjug"><img class="social" src="../images/media/instagram.png" />Instagram</a><!--
-				--><a class="move-next-down" href = "https://linkedin.com/in/roger-ramjug-65b67a4a"><img class="social" src="../images/media/linkedin.png" />LinkedIn</a><!--
-				--><a class="move-next-down" href = "mailto:rogerdramjug@gmail.com"><img class="social" src="../images/media/email.png" />Email</a>
+				--><a class="move-next-down" href = "https://facebook.com/roger.ramjug"><img class="social" src="../images/media/facebook.png" alt="Facebook Logo" />Facebook</a><!--
+				--><a class="move-next-down" href = "https://twitter.com/rogerdramjug"><img class="social" src="../images/media/twitter.png" alt="Twitter Logo" />Twitter</a><!--
+				--><a class="move-next-down" href = "https://instagram.com/rogerdramjug"><img class="social" src="../images/media/instagram.png" alt="Instagram Logo" />Instagram</a><!--
+				--><a class="move-next-down" href = "https://linkedin.com/in/roger-ramjug-65b67a4a"><img class="social" src="../images/media/linkedin.png" alt="LinkedIn Logo" />LinkedIn</a><!--
+				--><a class="move-next-down" href = "mailto:ElectRogerDRamjug@Gmail.com"><img class="social" src="../images/media/mail.png" alt="Email: " />ElectRogerDRamjug@Gmail.com</a><!--
+				--><a class="move-next-down" href = "tel:845-728-4466"><img class="social" src="../images/media/phone.png" alt="Phone #" />845-728-4466</a>
 			</nav>
 			<aside>
 				<font style="font-family: Arial;">&copy;</font> 2020-2021 Roger Ramjug<br />

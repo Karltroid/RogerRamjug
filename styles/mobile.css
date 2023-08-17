@@ -9,6 +9,7 @@ body
 
 header
 {
+	height: calc( (60px + (10px * 2)) * 2.5 );
 	height: calc( (var(--mobileHeaderHeight) + (var(--mobilePadding) * 2)) * 2.5 );
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -24,17 +25,25 @@ header#my-platform
 
 footer
 {
+	padding: 25px 10px;
 	padding: var(--mobileVerticalSpacing)  var(--mobileSideMargin);
 }
 
 footer nav a
 {
+	padding: 0 10px;
 	padding: 0 var(--mobilePadding);
 }
 
 p
 {
 	text-indent: 0;
+}
+
+.last
+{
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 .overlay
@@ -46,8 +55,8 @@ p
 	width: 100vw;
 	height: 100vh;
 	background: rgba(0,0,0,.4);
-	backdrop-filter: blur(3px);
 	-webkit-backdrop-filter: blur(3px);
+	backdrop-filter: blur(3px);
 }
 
 .overlay-close-btn
@@ -74,23 +83,71 @@ p
 	left: 0;
 	transform: translate(0, 0);
 	width: 100%;
+	height: calc(100% - 60px);
 	height: calc(100% - var(--mobileHeaderHeight));
 }
 
 #navbar
 {
-	padding:  var(--mobilePadding) 0;
 	font-family: product-sans-bold;
+	padding: 10px 0;
+	padding: var(--mobilePadding) 0;
+	height: 60px;
 	height: var(--mobileHeaderHeight);
 	width: 100%;
+	background-color: #29648A;
 	background-color: var(--siteDarkBlue);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 	box-shadow: var(--perspectiveBoxShadow);
+	top: calc( ((60px + (10px * 2)) * 2.5) - 60px - (10px * 2));
 	top: calc( ((var(--mobileHeaderHeight) + (var(--mobilePadding) * 2)) * 2.5) - var(--mobileHeaderHeight) - (var(--mobilePadding) * 2));
+}
+
+#mobile-nav
+{
+	position: absolute;
+	display: block !important;
+	z-index: 0 !important;
+	left: 0;
+	top: calc( 60px + (10px * 2));
+	top: calc( var(--mobileHeaderHeight) + (var(--mobilePadding) * 2));
+	text-align: center;
+	width: 100%;
+	height: auto !important;
+	background-color: #29648A;
+	background-color: var(--siteDarkBlue);
+	background-filter: blur(3px);
+	font-size: 1.2em;
+	visibility: hidden;
+	
+}
+
+#mobile-nav a
+{
+	display: block;
+	width: 100%;
+	padding: 0;
+	height: calc((100vh - (60px + 10px * 4)) / 6);
+	height: calc((100vh - (var(--mobileHeaderHeight) + var(--mobilePadding) * 4)) / 6);
+	line-height: calc((100vh - (60px + 10px * 2)) / 6);
+	line-height: calc((100vh - (var(--mobileHeaderHeight) + var(--mobilePadding) * 2)) / 6);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	box-shadow: var(--perspectiveBoxShadow);
+	border-bottom: 5px solid #25274D;
+	border-bottom: 5px solid var(--siteDarkPurple);
+}
+
+#mobile-nav a:hover
+{
+	text-decoration: none !important;
+	transform: none !important;
+	transition: 0;
 }
 
 #navbar img#header-logo
 {
 	height: 100%;
+	margin-left: 10px;
 	margin-left: var(--mobileSideMargin);
 }
 
@@ -99,9 +156,11 @@ p
 	float: right;
 	display: inline-block;
 	height: 100%;
+	line-height: 60px;
 	line-height: var(--mobileHeaderHeight);
-	white-space: nowrap;
+	margin-right: 10px;
 	margin-right: var(--mobileSideMargin);
+	white-space: nowrap;
 }
 
 #navbar button:hover img
@@ -130,66 +189,48 @@ p
 	visibility: visible;
 	pointer-events: auto;
 	position: static;
-}
-
-nav.mobile
-{
-	position: absolute;
-	display: block !important;
-	z-index: 10 !important;
-	left: 0;
-	top: calc(var(--mobileHeaderHeight) + (var(--mobilePadding *3 )));
-	text-align: center;
-	width: 100% !important;
-	height: auto !important;
-	background-color: var(--siteDarkBlue);
-}
-
-nav.mobile a
-{
-	display: block !important;
-	width: 100% !important;
-	height: var(--mobileHeaderHeight) !important;
-	padding: 0 !important;
-}
-
-nav.mobile a:hover
-{
-	text-decoration: none !important;
-	transform: none !important;
-	transition: 0;
+	opacity: 1;
 }
 
 #content
 {
+	margin: 25px 10px;
 	margin: var(--mobileVerticalSpacing) var(--mobileSideMargin);
 }
 
 .move-next-down
 {
+	margin-bottom: 25px;
 	margin-bottom: var(--mobileVerticalSpacing);
 }
 
 .move-next-down-small
 {
+	margin-bottom: calc(25px / 2);
 	margin-bottom: calc(var(--mobileVerticalSpacing) / 2);
 }
 
 .move-previous-up
 {
+	margin-top: 25px;
 	margin-top: var(--mobileVerticalSpacing);
 }
 
 .move-previous-up-small
 {
+	margin-top: calc(25px / 2);
 	margin-top: calc(var(--mobileVerticalSpacing) / 2);
 }
 
 .section
 {
+	padding: 10px;
 	padding: var(--mobilePadding);
+	height: calc(25px * 10);
 	height: calc(var(--mobileVerticalSpacing) * 10);
+	margin-bottom: 25px;
 	margin-bottom: var(--mobileVerticalSpacing);
+	width: calc(100% - (10px * 2));
 	width: calc(100% - (var(--mobilePadding) * 2));
 }
 
@@ -197,43 +238,65 @@ nav.mobile a:hover
 {
 	display: block;
 	width: 100%;
+	height: calc(60px * 3);
 	height: calc(var(--mobileHeaderHeight) * 3);
 }
 
 .section-text
 {
 	display: block;
+	padding: 10px;
 	padding: var(--mobilePadding);
-	box-shadow: var(--mobileBoxShadow);
 }
 
-.section-text h1
+.section-text h2
 {
+	padding-bottom: calc(20px * .75);
 	padding-bottom: calc(var(--desktopPadding) * .75);
+	font-size: 2em;
 }
 
-.section-text p
+.section-text p, .section-text ol, .section-text aside
 {
 	font-size: 1em;
 	text-align: center;
 }
 
+.section-text ol li
+{
+	list-style-type: none;
+	margin: 0;
+}
+
+.section-text ol
+{
+	padding: 10px 0;
+	padding: var(--mobilePadding) 0;
+	border-top: 1px dotted rgba(255,255,255,.5);
+	border-bottom: 1px dotted rgba(255,255,255,.5);
+}
+
 .more-btn
 {
 	display: block;
-	margin: 0 auto;
-	padding: var(--mobilePadding);
+	margin: 20px auto 10px;
+	margin: var(--desktopPadding) auto var(--mobilePadding);
+	padding: var(--desktopPadding);
 }
 
 .more-btn span
 {
+	margin-right: calc(10px / 2);
 	margin-right: calc(var(--mobilePadding) / 2);
 }
 
 .section-break
 {
+	height: calc(100vw - (25px*2));
 	height: calc(100vw - (var(--mobileVerticalSpacing)*2));
+	width: calc(100% + 10px * 2);
 	width: calc(100% + var(--mobileSideMargin) * 2);
+	left: calc(-1 * 10px);
 	left: calc(-1 * var(--mobileSideMargin));
 	font-size: .9em;
 }
@@ -242,4 +305,18 @@ nav.mobile a:hover
 {
 	background-size: auto 100vh;
 	background-position: center;
+}
+
+.column
+{
+	-ms-flex: calc( 50% - (20px/2) + 2px );
+	flex: calc( 50% - (20px/2) + 2px );
+	flex: calc( 50% - (var(--desktopPadding)/2) + 2px );
+	max-width: calc( 50% - (20px/2) + 2px );
+	max-width: calc( 50% - (var(--desktopPadding)/2) + 2px );
+}
+
+.row
+{
+	width: calc(100vw - 66.66px);
 }

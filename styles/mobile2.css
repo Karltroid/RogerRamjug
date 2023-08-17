@@ -9,3 +9,10 @@ header#my-platform
 	background-position: 50% -100px;
 	background-size: 150vw auto;
 }
+
+.column
+{
+	-ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+}

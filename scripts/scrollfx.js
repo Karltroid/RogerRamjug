@@ -1,19 +1,18 @@
-var header, navbar, content;                                 // page elements
+var body, header, navbar, content;                           // page elements
 var progress = 0, headerR = 37, headerG = 39, headerB = 77;  // integers
 
 
 window.addEventListener("load", function()
 {
-    // get the variables an dupdate the navbar when the page finishes loading
     update_vars();
-    update_navbar();
 });
 
 
 document.addEventListener('scroll', function()
 {
 	// update nav bar when the user is scrolling
-	update_navbar();
+	if (header != undefined && navbar != undefined && content != undefined)
+		update_navbar();
 });
 
 
@@ -23,6 +22,8 @@ function update_vars()
     header = document.getElementsByTagName("header")[0];
     navbar = document.getElementById("navbar");
     content = document.getElementById("content");
+
+    update_navbar();
 }
 
 
@@ -44,7 +45,7 @@ function update_navbar()
 		                        + (progress * headerR) + ","  // red
 		                        + (progress * headerG) + ","  // green
 		                        + (progress * headerB) + ","  // blue
-		                        + (progress + .225) + ")";    // opacity
+		                        + (progress +    .225) + ")"; // opacity
 		
 		header.style.filter = "blur(" + (progress * 2.5) + "px)";
 		header.style.webkitFilter = "blur(" + (progress * 2.5) + "px)";
